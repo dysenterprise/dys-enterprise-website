@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#061b3a">
+<meta name="description" content="DYS Enterprise - Motor Insurance, VLTD/GPS and RTO services in Thane, Mumbai and Maharashtra. Call or WhatsApp 7021415438.">
+<title>DYS Enterprise | Insurance • VLTD GPS • RTO Services</title>
+<style>
+:root{
+  --navy:#061b3a;--navy2:#0a2e62;--blue:#0877ee;--sky:#18b7ee;
+  --green:#18b957;--yellow:#ffd51a;--bg:#f5f8fc;--ink:#10213b;--muted:#66758b;--white:#fff;
+  --shadow:0 14px 35px rgba(9,35,70,.11);--radius:18px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(6,27,58,.97);color:#fff;box-shadow:0 5px 22px rgba(0,0,0,.12)}
+.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900}
+.logo-mark{width:43px;height:43px;border-radius:12px;background:linear-gradient(145deg,#fff,#cdeaff);display:grid;place-items:center;color:var(--navy);font-weight:1000;font-size:15px;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.brand-text{font-size:20px;line-height:1}.brand-text span{display:block;color:#57d5ff;font-size:11px;letter-spacing:1.4px;margin-top:3px}
+.navlinks{display:flex;gap:22px;font-size:14px;font-weight:700}.navlinks a:hover{color:#5edbff}
+.top-actions{display:flex;gap:8px}.top-btn{padding:10px 13px;border-radius:10px;font-weight:800;font-size:13px;background:var(--green)}
+.hero{background:radial-gradient(circle at 90% 10%,rgba(24,183,238,.32),transparent 32%),linear-gradient(135deg,#04152e,#0b3975 70%,#0877ee);color:#fff;overflow:hidden}
+.hero-inner{padding:58px 0 48px;display:grid;grid-template-columns:1.12fr .88fr;gap:34px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:12px;font-weight:800;color:#9fe9ff}
+h1{font-size:clamp(37px,5.2vw,64px);line-height:1.02;margin:16px 0 18px;letter-spacing:-1.5px}
+.hero p{font-size:17px;color:#d8e8fb;max-width:650px}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:11px;margin-top:25px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 18px;border-radius:11px;font-weight:900;border:0;cursor:pointer}
+.btn-green{background:var(--green);color:#fff}.btn-blue{background:var(--blue);color:#fff}.btn-white{background:#fff;color:var(--navy)}
+.quick-card{background:#fff;color:var(--ink);border-radius:20px;padding:22px;box-shadow:0 22px 55px rgba(0,0,0,.22)}
+.quick-card h3{margin:0 0 3px;font-size:22px}.quick-card .sub{font-size:13px;color:var(--muted);margin-bottom:12px}
+.field{width:100%;padding:13px 13px;margin:6px 0;border:1px solid #d8e1ec;border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
+textarea.field{min-height:80px;resize:vertical}
+section{padding:66px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 34px}.section-head h2{font-size:34px;margin:0 0 8px}.section-head p{color:var(--muted);margin:0}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.service{background:#fff;border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);border:1px solid #edf1f6;transition:.2s}.service:hover{transform:translateY(-3px)}
+.service-icon{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;font-size:26px;background:#eaf4ff}
+.service h3{font-size:18px;margin:14px 0 7px}.service p{font-size:13px;color:var(--muted);min-height:40px}.service a{color:var(--blue);font-weight:900;font-size:13px}
+.dark-section{background:var(--navy);color:#fff}.dark-section .section-head p{color:#b9cbe0}
+.insurance-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.item{padding:20px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.045);border-radius:15px}.item strong{display:block;font-size:17px;margin-bottom:5px}.item span{color:#b9cbe0;font-size:13px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{background:#fff;padding:26px;border-radius:20px;box-shadow:var(--shadow)}.panel h3{margin-top:0;font-size:24px}
+.check{display:flex;gap:10px;margin:12px 0;font-size:14px}.check b{color:var(--blue)}
+.quote-section{background:linear-gradient(180deg,#eef6ff,#f8fbff)}
+.quote-box{max-width:780px;margin:auto;background:var(--navy);color:#fff;padding:28px;border-radius:22px;box-shadow:0 20px 55px rgba(6,27,58,.2)}.quote-box h2{margin:0 0 5px}.quote-box p{color:#c7d8ec;margin-top:0}.quote-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quote-box .field{background:#fff}.quote-box select{appearance:auto}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{background:#fff;padding:26px;border-radius:20px;box-shadow:var(--shadow)}.contact-line{padding:14px 0;border-bottom:1px solid #e8edf4}.contact-line:last-child{border-bottom:0}.muted{color:var(--muted);font-size:13px}
+.cta{background:linear-gradient(135deg,#0877ee,#18b7ee);color:#fff;border-radius:24px;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:20px}.cta h2{margin:0 0 5px;font-size:31px}.cta p{margin:0;color:#e6f8ff}
+footer{background:#031227;color:#9eb2c9;padding:30px 0 90px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{color:#fff;font-weight:900;font-size:20px}
+.float-wa{position:fixed;right:18px;bottom:76px;z-index:60;width:59px;height:59px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-size:29px;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.bottom-nav{display:none}
+.note{font-size:11px;color:#7b8798;margin-top:9px}
+@media(max-width:900px){
+ .navlinks{display:none}.hero-inner{grid-template-columns:1fr}.service-grid{grid-template-columns:repeat(2,1fr)}.insurance-grid{grid-template-columns:1fr 1fr}.two-col,.contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ body{padding-bottom:65px}.container{width:min(94%,520px)}.nav{min-height:64px}.top-actions{display:none}
+ .hero-inner{padding:42px 0 35px}.hero p{font-size:15px}.hero-buttons .btn{width:100%}
+ h1{font-size:42px}.section-head h2{font-size:29px}section{padding:52px 0}
+ .service-grid{grid-template-columns:1fr 1fr;gap:11px}.service{padding:17px}.service h3{font-size:16px}.service p{font-size:12px;min-height:0}.service-icon{width:43px;height:43px;font-size:22px}
+ .insurance-grid{grid-template-columns:1fr}.quote-row{grid-template-columns:1fr}.cta{padding:27px;display:block}.cta .btn{margin-top:17px;width:100%}
+ .float-wa{bottom:78px}.bottom-nav{display:grid;position:fixed;bottom:0;left:0;right:0;height:64px;background:#061b3a;z-index:55;grid-template-columns:repeat(4,1fr);box-shadow:0 -7px 25px rgba(0,0,0,.18)}
+ .bottom-nav a{color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;font-weight:800;gap:2px}.bottom-nav span{font-size:21px;line-height:1}
+ .brand-text{font-size:18px}.logo-mark{width:39px;height:39px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <div class="logo-mark">DYS</div>
+      <div class="brand-text">DYS ENTERPRISE<span>INSURANCE • VLTD • RTO</span></div>
+    </a>
+    <div class="navlinks">
+      <a href="#services">Services</a><a href="#insurance">Insurance</a><a href="#vltd">VLTD/GPS</a><a href="#rto">RTO</a><a href="#contact">Contact</a>
+    </div>
+    <div class="top-actions"><a class="top-btn" href="https://wa.me/917021415438?text=Hello%20DYS%20Enterprise%2C%20I%20need%20a%20quote." target="_blank">WhatsApp</a></div>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="container hero-inner">
+  <div>
+    <span class="badge">● THANE • MUMBAI • MAHARASHTRA</span>
+    <h1>One Stop Solution for Insurance, VLTD/GPS & RTO Services.</h1>
+    <p>Vehicle insurance, GPS/VLTD assistance, HSRP and common RTO services — with quick support on WhatsApp.</p>
+    <div class="hero-buttons">
+      <a class="btn btn-green" href="https://wa.me/917021415438?text=Hello%20DYS%20Enterprise%2C%20I%20want%20a%20vehicle%20service%20quote." target="_blank">💬 Get Quote on WhatsApp</a>
+      <a class="btn btn-white" href="tel:+917021415438">📞 Call 7021415438</a>
+    </div>
+  </div>
+  <div class="quick-card">
+    <h3>Quick Enquiry</h3><div class="sub">Send your vehicle details directly to WhatsApp.</div>
+    <form class="lead-form">
+      <input class="field name" placeholder="Your Name" required>
+      <input class="field vehicle" placeholder="Vehicle Number (e.g. MH04AB1234)" required>
+      <select class="field service-select" required>
+        <option value="">Select Service</option>
+        <option>Motor Insurance</option><option>VLTD / GPS</option><option>RTO Service</option><option>HSRP</option>
+      </select>
+      <button class="btn btn-blue" style="width:100%;margin-top:6px">Send Enquiry</button>
+      <div class="note">We will contact you on WhatsApp regarding your enquiry.</div>
+    </form>
+  </div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-head"><h2>Our Main Services</h2><p>Everything your vehicle may need, brought together under one brand.</p></div>
+<div class="service-grid">
+  <div class="service"><div class="service-icon">🛡️</div><h3>Motor Insurance</h3><p>Car, bike, auto, taxi, bus and truck insurance assistance.</p><a href="#insurance">View Services →</a></div>
+  <div class="service"><div class="service-icon">📍</div><h3>VLTD / GPS</h3><p>Vehicle tracking device and installation assistance.</p><a href="#vltd">View Services →</a></div>
+  <div class="service"><div class="service-icon">🚘</div><h3>RTO Services</h3><p>RC transfer, NOC, fitness, permit and related services.</p><a href="#rto">View Services →</a></div>
+  <div class="service"><div class="service-icon">🔢</div><h3>HSRP</h3><p>High Security Registration Plate related assistance.</p><a href="#rto">Enquire Now →</a></div>
+</div>
+</div>
+</section>
+
+<section id="insurance" class="dark-section">
+<div class="container">
+<div class="section-head"><h2>Motor Insurance</h2><p>Insurance assistance for private and commercial vehicles. Availability and terms depend on the insurer and vehicle details.</p></div>
+<div class="insurance-grid">
+  <div class="item"><strong>🚗 Car Insurance</strong><span>New policy and renewal assistance.</span></div>
+  <div class="item"><strong>🏍️ Bike Insurance</strong><span>Two-wheeler insurance assistance.</span></div>
+  <div class="item"><strong>🛺 Auto Rickshaw</strong><span>Commercial three-wheeler insurance.</span></div>
+  <div class="item"><strong>🚕 Taxi / Ola / Uber</strong><span>Commercial cab insurance assistance.</span></div>
+  <div class="item"><strong>🚌 Bus Insurance</strong><span>Commercial passenger vehicle assistance.</span></div>
+  <div class="item"><strong>🚚 Truck Insurance</strong><span>Commercial goods vehicle assistance.</span></div>
+</div>
+</div>
+</section>
+
+<section id="vltd">
+<div class="container">
+<div class="section-head"><h2>VLTD / GPS Services</h2><p>Tracking-device assistance for applicable commercial vehicles, including installation and documentation support.</p></div>
+<div class="two-col">
+  <div class="panel">
+    <h3>GPS / VLTD Assistance</h3>
+    <div class="check"><b>✓</b><span>Vehicle tracking device assistance</span></div>
+    <div class="check"><b>✓</b><span>AIS-140 compliant device options where applicable</span></div>
+    <div class="check"><b>✓</b><span>Installation / fitting assistance</span></div>
+    <div class="check"><b>✓</b><span>Vehicle and device documentation guidance</span></div>
+    <a class="btn btn-green" style="margin-top:10px" href="https://wa.me/917021415438?text=Hello%20DYS%20Enterprise%2C%20I%20need%20VLTD%2FGPS%20details." target="_blank">Ask About VLTD</a>
+  </div>
+  <div class="panel">
+    <h3>Who can enquire?</h3>
+    <p class="muted">Commercial vehicle owners, fleet operators, transport businesses and other customers who need a vehicle tracking solution can send their vehicle number and requirement for guidance.</p>
+    <p class="muted">Final device eligibility, approval and regulatory requirements depend on the vehicle category and applicable rules.</p>
+  </div>
+</div>
+</div>
+</section>
+
+<section id="rto" style="background:#fff">
+<div class="container">
+<div class="section-head"><h2>RTO & Vehicle Services</h2><p>Common vehicle documentation and compliance assistance for Maharashtra customers.</p></div>
+<div class="service-grid">
+  <div class="service"><h3>RC Transfer</h3><p>Ownership transfer assistance.</p></div>
+  <div class="service"><h3>Vehicle NOC</h3><p>NOC-related process assistance.</p></div>
+  <div class="service"><h3>Fitness</h3><p>Vehicle fitness process assistance.</p></div>
+  <div class="service"><h3>Permit Renewal</h3><p>Permit-related assistance.</p></div>
+  <div class="service"><h3>Vehicle Passing</h3><p>Passing and compliance assistance.</p></div>
+  <div class="service"><h3>Loan Add / Cancel</h3><p>Hypothecation documentation assistance.</p></div>
+  <div class="service"><h3>HSRP Number Plate</h3><p>HSRP-related assistance.</p></div>
+  <div class="service"><h3>Other RTO Work</h3><p>Ask us about your requirement.</p></div>
+</div>
+</div>
+</section>
+
+<section class="quote-section">
+<div class="container">
+<div class="quote-box">
+<h2>Get Your Quick Quote</h2><p>Enter your vehicle number and select what you need.</p>
+<form class="lead-form">
+<div class="quote-row">
+<input class="field name" placeholder="Your Name" required>
+<input class="field vehicle" placeholder="Vehicle Number" required>
+</div>
+<div class="quote-row">
+<select class="field service-select" required>
+<option value="">Select Service</option><option>Motor Insurance</option><option>VLTD / GPS</option><option>RTO Service</option><option>HSRP</option>
+</select>
+<input class="field mobile" placeholder="Mobile Number" value="7021415438">
+</div>
+<textarea class="field message" placeholder="Additional details (optional)"></textarea>
+<button class="btn btn-green" style="width:100%;font-size:16px">💬 Get Quote on WhatsApp</button>
+</form>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="cta">
+<div><h2>Need Help With Your Vehicle?</h2><p>Send your vehicle number and requirement on WhatsApp.</p></div>
+<a class="btn btn-green" href="https://wa.me/917021415438?text=Hello%20DYS%20Enterprise%2C%20I%20need%20help%20with%20my%20vehicle." target="_blank">WhatsApp 7021415438</a>
+</div>
+<div class="contact-grid" style="margin-top:22px">
+<div class="contact-card">
+<h3>DYS Enterprise</h3>
+<div class="contact-line"><strong>📞 Phone / WhatsApp</strong><br><a href="tel:+917021415438" class="muted">7021415438</a></div>
+<div class="contact-line"><strong>✉️ Email</strong><br><span class="muted">dysenterpriseofficial@gmail.com</span></div>
+<div class="contact-line"><strong>📍 Service Area</strong><br><span class="muted">Thane • Mumbai • Maharashtra</span></div>
+</div>
+<div class="contact-card">
+<h3>Why DYS Enterprise?</h3>
+<div class="contact-line"><strong>One-stop assistance</strong><br><span class="muted">Insurance, VLTD/GPS and RTO-related services.</span></div>
+<div class="contact-line"><strong>Quick WhatsApp enquiry</strong><br><span class="muted">Send your vehicle number and requirement.</span></div>
+<div class="contact-line"><strong>Mobile-first service</strong><br><span class="muted">Designed so customers can contact you in a few taps.</span></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-inner">
+<div><div class="footer-brand">DYS ENTERPRISE</div><div>Motor Insurance • VLTD/GPS • RTO Services</div></div>
+<div>© 2026 DYS Enterprise. All rights reserved.</div>
+</div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/917021415438?text=Hello%20DYS%20Enterprise%2C%20I%20need%20help." target="_blank" aria-label="WhatsApp">◉</a>
+<div class="bottom-nav">
+<a href="#home"><span>⌂</span>Home</a>
+<a href="#insurance"><span>🛡</span>Insurance</a>
+<a href="#vltd"><span>📍</span>GPS/VLTD</a>
+<a href="#rto"><span>🚘</span>RTO</a>
+</div>
+
+<script>
+function openWhatsApp(form){
+  const name = form.querySelector('.name')?.value.trim() || 'Not provided';
+  const vehicle = form.querySelector('.vehicle')?.value.trim().toUpperCase() || 'Not provided';
+  const service = form.querySelector('.service-select')?.value || 'Not selected';
+  const mobile = form.querySelector('.mobile')?.value.trim() || 'Not provided';
+  const message = form.querySelector('.message')?.value.trim() || 'N/A';
+  const text = `Hello DYS Enterprise,%0A%0AName: ${encodeURIComponent(name)}%0AVehicle No: ${encodeURIComponent(vehicle)}%0AService: ${encodeURIComponent(service)}%0AMobile: ${encodeURIComponent(mobile)}%0ADetails: ${encodeURIComponent(message)}%0A%0APlease help me with the quotation/process.`;
+  window.open('https://wa.me/917021415438?text='+text,'_blank');
+}
+document.querySelectorAll('.lead-form').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();openWhatsApp(this)}));
+</script>
+</body>
+</html>
