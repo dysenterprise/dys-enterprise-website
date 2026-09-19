@@ -238,13 +238,23 @@ footer{background:#031227;color:#9eb2c9;padding:30px 0 90px}.footer-inner{displa
 
 <script>
 function openWhatsApp(form){
-  const name = form.querySelector('.name')?.value.trim() || 'Not provided';
-  const vehicle = form.querySelector('.vehicle')?.value.trim().toUpperCase() || 'Not provided';
-  const service = form.querySelector('.service-select')?.value || 'Not selected';
-  const mobile = form.querySelector('.mobile')?.value.trim() || 'Not provided';
-  const message = form.querySelector('.message')?.value.trim() || 'N/A';
-  const text = `Hello DYS ENTERPRISES,%0A%0AName: ${encodeURIComponent(name)}%0AVehicle No: ${encodeURIComponent(vehicle)}%0AService: ${encodeURIComponent(service)}%0AMobile: ${encodeURIComponent(mobile)}%0ADetails: ${encodeURIComponent(message)}%0A%0APlease help me with the quotation/process.`;
-  window.open('https://wa.me/917021415438?text='+text,'_blank');
+  const name = form.querySelector('.name')?.value.trim();
+  const vehicle = form.querySelector('.vehicle')?.value.trim().toUpperCase();
+  const service = form.querySelector('.service-select')?.value || '';
+  const mobile = form.querySelector('.mobile')?.value.trim();
+  const message = form.querySelector('.message')?.value.trim();
+
+  let text = `Hello DYS ENTERPRISES,%0A%0A`;
+
+  if (name) text += `Name: ${encodeURIComponent(name)}%0A`;
+  if (vehicle) text += `Vehicle No: ${encodeURIComponent(vehicle)}%0A`;
+  if (service) text += `Service: ${encodeURIComponent(service)}%0A`;
+  if (mobile) text += `Mobile: ${encodeURIComponent(mobile)}%0A`;
+  if (message) text += `Details: ${encodeURIComponent(message)}%0A`;
+
+  text += `%0APlease help me with the quotation/process.`;
+
+  window.open(`https://wa.me/917021415438?text=${text}`, '_blank');
 }
 document.querySelectorAll('.lead-form').forEach(form=>form.addEventListener('submit',function(e){e.preventDefault();openWhatsApp(this)}));
 </script>
